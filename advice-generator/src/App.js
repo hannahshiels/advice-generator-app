@@ -1,22 +1,17 @@
-//import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import Attribution from './components/Attribution';
+import Card from './components/Card';
+
+
 
 function App() {
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card></Card>
+      <Attribution></Attribution>
     </div>
   );
 }
