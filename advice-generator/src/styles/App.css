@@ -30,7 +30,7 @@ p {
 .card-header {
   color: var(--primary-neon-green);
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 2.5px;
   padding: 0 1rem;
   padding-top: 2rem;
 }
@@ -44,7 +44,6 @@ p {
   padding: 1.5rem;
 }
 
-
 .divider-container {
   width: 100%;
 }
@@ -55,10 +54,6 @@ p {
   margin-right: auto;
   width: 100%;
   bottom: -1.5rem;
-}
-
-.card-footer .circle {
-  width: 100%;
 }
 
 .card button {
@@ -76,10 +71,12 @@ p {
   transition: ease-in-out 0.3s;
 }
 
-.card button:hover {
+.card button:hover,
+.card button:focus {
   box-shadow: 0 0 1rem var(--primary-neon-green);
   cursor: pointer;
 }
+
 .attribution {
   color: var(--primary-light-cyan);
   font-size: 11px;
@@ -92,4 +89,35 @@ p {
 }
 .attribution a {
   color: var(--primary-neon-green);
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    max-width: 100%;
+    text-align: center;
+    background-color: var(--neutral-dark-grayish-blue);
+    position: relative;
+    padding-bottom: 2rem;
+    margin: 1.5rem;
+  }
+
+  .card button {
+    background: var(--primary-neon-green);
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-header {
+    padding: 0 0.5rem;
+    padding-top: 1rem;
+  }
+
+  .card-body {
+    color: var(--primary-light-cyan);
+    line-height: 1.5;
+    font-size: 28px;
+    position: relative;
+    text-align: center;
+    padding: 1.5 0rem;
+  }
 }

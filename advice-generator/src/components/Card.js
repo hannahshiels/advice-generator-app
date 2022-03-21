@@ -1,5 +1,7 @@
 import Box from "@mui/material/Box";
 import patternDividerDesktop from "../images/pattern-divider-desktop.svg";
+import patternDividerMobile from "../images/pattern-divider-mobile.svg";
+
 import dice from "../images/icon-dice.svg";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -50,7 +52,18 @@ function Card() {
         </p>
         <Box className="divider-container">
           {" "}
-          <img alt="" src={patternDividerDesktop} />{" "}
+          <picture>
+            {" "}
+            <source
+              media="(max-width:500px)"
+              srcSet={patternDividerMobile}
+            ></source>
+               <source
+              media="(min-width:501px)"
+              srcSet={patternDividerDesktop}
+            ></source>
+            <img alt="" src={patternDividerDesktop} />
+          </picture>{" "}
         </Box>
       </Box>
       <Box className="card-footer">
