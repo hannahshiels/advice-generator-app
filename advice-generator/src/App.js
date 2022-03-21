@@ -1,13 +1,8 @@
-import './styles/App.css';
-import Attribution from './components/Attribution';
-import Card from './components/Card';
-
-
+import "./styles/App.css";
+import Attribution from "./components/Attribution";
+import Card from "./components/Card";
 
 function App() {
-
-
-
   return (
     <div className="App">
       <Card></Card>
