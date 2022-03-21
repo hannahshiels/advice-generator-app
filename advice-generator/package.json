@@ -1,6 +1,6 @@
 {
   "name": "advice-generator",
-  "homepage": "https://hannahshiels.github.io/advice-generator",
+  "homepage": "https://hannahshiels.github.io/advice-generator-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
